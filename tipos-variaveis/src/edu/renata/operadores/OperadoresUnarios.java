@@ -1,0 +1,36 @@
+package edu.renata.operadores;
+
+public class OperadoresUnarios {
+    
+    public static void main(String[] args) {
+        
+        int numero = 5;
+        numero = - numero;
+
+        //numero = +numero; errado
+        // para retornar a variável positiva devemos multiplicar por -1
+		
+        numero = numero * -1;
+
+        //Imprimindo o numero negativo, porém não altera a variável
+        System.out.println(- numero);
+        System.out.println(numero);
+        
+        //incrementando numero em mais 1 numero, imprime 6
+        numero ++;
+        System.out.println(numero);
+        
+        //incrementando numero em mais 1 numero, imprime 7
+        System.out.println(numero ++);// ops algo de errado não está certo
+        
+        System.out.println(numero);// agora sim, numero virou 7
+        
+        //ordem de precedencia conta aqui
+        System.out.println(++ numero);
+        
+        boolean verdadeiro = true;
+        
+        System.out.println("Inverteu " + !verdadeiro);   
+
+    }
+}
